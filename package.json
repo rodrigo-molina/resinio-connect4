@@ -4,7 +4,8 @@
   "description": "Connect4 on the sensehat with raspberry pi and resin",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint src test --fix",
+    "test": "jest --coverage"
   },
   "author": "Alex Garcia & Rodrigo Molina",
   "license": "Apache-2.0",
@@ -12,5 +13,10 @@
     "lodash": "^4.17.4",
     "sense-hat-led": "^1.0.1",
     "sense-joystick": "0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "jest": "^23.6.0"
   }
 }
